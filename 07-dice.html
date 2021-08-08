@@ -7,18 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice</title>
     <style type="text/css">
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
 
+        .item {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #666;
+        }
+
+        .item:nth-child(2) {
+            align-self: center;
+        }
+
+        .item:nth-child(3) {
+            align-self: flex-end;
+        }
     </style>
 </head>
 
 <body>
-    <div id="header">this is header</div>
-    <div id="container" class="clearfix">
-        <div id="center" class="column">this is center</div>
-        <div id="left" class="column">this is left</div>
-        <div id="right" class="column">this is right</div>
+    <div class="box">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
     </div>
-    <div id="footer">this is footer</div>
 </body>
 
 </html>
