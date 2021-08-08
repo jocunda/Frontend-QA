@@ -23,13 +23,43 @@
 
         .container {
             border: 1px solid #ccc;
-            s
+            padding: 10px;
+        }
+
+        .container .item {
+            width: 100px;
+            height: 100px;
+        }
+
+        .container .border-blue {
+            border: 1px solid blue;
+        }
+
+        .container .border-red {
+            border: 1px solid red;
         }
     </style>
 </head>
 
 <body>
-
+    <p>Margin top bottom-minus condition</p>
+    <div class="container clearfix">
+        <div class="item border-blue">
+            this is item 1
+        </div>
+        <div class="item border-red">
+            this is item 2
+        </div>
+    </div>
+    <p>Margin left right-minus condition</p>
+    <div class="container clearfix">
+        <div class="item border-blue float-left">
+            this is item 3
+        </div>
+        <div class="item border-red float-left">
+            this is item 4
+        </div>
+    </div>
 </body>
 
 </html>
