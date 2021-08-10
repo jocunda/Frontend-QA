@@ -24,6 +24,23 @@ class jQuery {
     }
 }
 
+//plugins
+jQuery.prototype.dialog = function (info) {
+    alert(info)
+}
+
+class myJQuery extends jQuery {
+    constructor(selector) {
+        super(selector)
+    }
+    addClass(className) {
+
+    }
+    style(data) {
+
+    }
+}
+
 // const $p = new jQuery('p')
 // $p.get(1)
 // $p.on('click', () => alert('clicked'))
