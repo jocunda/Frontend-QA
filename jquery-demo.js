@@ -44,3 +44,4 @@ class myJQuery extends jQuery {
 // const $p = new jQuery('p')
 // $p.get(1)
 // $p.on('click', () => alert('clicked'))
+
